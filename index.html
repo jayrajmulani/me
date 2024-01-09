@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/timeline.css">
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -38,7 +39,7 @@
 					</li>
 					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
 					<li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+					<!-- <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li> -->
 				</ul>
 			</div>
 		</div>
@@ -51,7 +52,8 @@
 				<div class="container-fluid px-md-0">
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
-						<div class="one-third order-md-last img" style="background-image:url(images/bg_1.png);">
+						<div class="one-third order-md-last img"
+							style="background-image:url(images/bg_1.png); opacity: 0.6;">
 							<div class="overlay"></div>
 							<div class="overlay-1"></div>
 						</div>
@@ -59,7 +61,7 @@
 							data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
 								<span class="subheading">Hello World!</span>
-								<h1 class="mb-4 mt-3">I am a <span>Software Engineer</span></h1>
+								<h1 class="mb-4 mt-3">I am a Software Engineer </h1>
 							</div>
 						</div>
 					</div>
@@ -160,7 +162,7 @@
 					<div class="py-md-5">
 						<div class="row justify-content-start pb-3">
 							<div class="col-md-12 heading-section ftco-animate">
-								<span class="subheading">Building impactful solutions, line by line.</span>
+								<span class="subheading">Building impactful solutions, line by line</span>
 								<h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
 								<p>Hello, I'm Jayraj, a passionate software engineer pursuing a Master's in
 									Computer Science at North Carolina State University. Beyond my technical expertise
@@ -201,7 +203,7 @@
 		<div class="container">
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-12 heading-section text-center ftco-animate">
-					<span class="subheading">Fueling Curiosity, Embracing Mastery. Learning, every moment!</span>
+					<span class="subheading">Fueling Curiosity, Embracing Mastery. Learning, every moment</span>
 					<h2 class="mb-4">My Skills</h2>
 				</div>
 			</div>
@@ -260,13 +262,100 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-12 heading-section text-center ftco-animate mb-5">
-					<span class="subheading">I am grat at</span>
-					<h2 class="mb-4">We do awesome services for our clients</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+					<span class="subheading">Leaving a lasting mark through impactful work</span>
+					<h2 class="mb-4">My Work Experience</h2>
+					<ul class="experience-timeline-ul">
+						<li class="experience-timeline-li" style="--accent-color:#B2B493">
+							<div class="date">September 2022-Present</div>
+							<div class="title">Graduate Research Assistant, North Carolina State University</div>
+							<div class="descr">
+								<ul style="text-align:left">
+									<li>Spearheaded the development, deployment, and maintenance of RABAapp - an
+										industry-leading biosecurity and contact tracing application, as a Full-Stack
+										Developer utilizing Angular, Java Spring boot, PostgreSQL, Keycloak & Docker.
+									</li>
+									<li>Created asynchronous Python scripts to reduce manual eﬀorts by leveraging
+										Pandas, openpyxl, regex libraries to process ﬁles & data.
+									</li>
+									<li> Ensured transition of high-quality code to production through rigorous code
+										reviews and constructive feedback.</li>
+									<li>Revolutionized biosecurity practices and made a profound national impact by
+										implementing Agile methodologies and Scrum practices in the development of
+										RABApp, currently leveraged by over 15 US State Health Oﬃcials.</li>
+								</ul>
+							</div>
+						</li>
+						<li class="experience-timeline-li" style="--accent-color:#B2B493">
+							<div class="date">January 2022 - June 2022</div>
+							<div class="title">Software Developer 2, Oracle</div>
+							<div class="descr">
+								<ul style="text-align:left">
+									<li>Collaborated in design, development & deployment of Terraform based service to
+										audit and automate provisioning and decommissioning of cloud resources at a
+										Global Business Unit (GBU) level.
+									</li>
+									<li>Proposed & automated critical patch update process to save over 100 man-hours
+										per quarter using Jira APIs & OCI Python SDK.
+									</li>
+									<li> Demonstrated leadership and collaboration skills by mentoring a team of 3,
+										leading 4 projects & conducting technical interviews.</li>
+								</ul>
+							</div>
+						</li>
+						<li class="experience-timeline-li" style="--accent-color:#B2B493">
+							<div class="date">September 2020 - December 2021</div>
+							<div class="title">Applications Engineer, Oracle</div>
+							<div class="descr">
+								<ul style="text-align:left">
+									<li>Tested, replicated and ﬁxed 78 bugs in Oracle Fusion App Suite, built in Oracle
+										Application Development Framework.
+									</li>
+									<li> Ensured backwards compatibility by patching and back-porting over 20 bug ﬁxes
+										and enhancements.
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="experience-timeline-li" style="--accent-color:#B2B493">
+							<div class="date">January 2020 - June 2020</div>
+							<div class="title">Project Intern, Oracle</div>
+							<div class="descr">
+								<ul style="text-align:left">
+									<li>Developed an auto-backup tool in Python for synchronizing large server ﬁles with
+										OCI Object Storage to ensure disaster recovery.
+									</li>
+									<li> Implemented asynchronous solution to manage and track cloud resource allocation
+										processes using Jira APIs, Django & React.js.
+									</li>
+									<li>
+										Dockerized and deployed on Oracle Cloud Infrastructure (OCI) leveraging Compute
+										& Autonomous Database.
+									</li>
+									<li>
+										Applied Critical Patch Updates (CPUs) on 7 clustered Linux environments to
+										ensure enhanced security with minimum downtime.
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="experience-timeline-li" style="--accent-color:#B2B493">
+							<div class="date">May 2019 - July 2019</div>
+							<div class="title">Summer Intern, Tata Consultancy Services</div>
+							<div class="descr">
+								<ul style="text-align:left">
+									<li>Reduced manual testing time by developing a semi-automated API testing tool
+										named "API Scoreboard" using Angular & Spring-boot.
+									</li>
+									<li> Deployed API Scoreboard on Amazon Web Services by leveraging services like
+										Elastic Beanstalk, RDS, S3 & EC2.
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
-
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-md-6 col-lg-3">
 					<div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
 						<div class="icon d-flex align-items-center justify-content-center"><span
@@ -350,7 +439,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 
@@ -359,15 +448,22 @@
 			<div class="row justify-content-between">
 				<div class="col-md-8 col-lg-8 d-flex align-items-center">
 					<div class="w-100 py-4">
-						<h2>Have a project on your mind.</h2>
-						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
-							It is a paradisematic country, in which roasted parts of sentences fly.</p>
-						<p class="mb-0"><a href="#" class="btn btn-white py-3 px-4">Contact me</a></p>
+						<h2>Am I a right fit?</h2>
+						<p>
+							Are you seeking a versatile and innovative software engineer with a proven track record in
+							full-stack development, cloud architecture, and DevOps? Look no further. I bring a dynamic
+							skill set, blending technical expertise in Angular, Spring Boot, Docker, Python, AWS, Oracle
+							Cloud, and GCP with a passion for creative problem-solving. My proficiency in GitHub
+							Actions, Ansible, Jenkins, and Terraform can prove immensely helpful. Ready to contribute my
+							unique blend of skills and a commitment to excellence, I am excited about the opportunity to
+							bring my talents to your team. Let's create something extraordinary together!</p>
+						<p class="mb-0"><a href="mailto:jayrajm.mulani@gmail.com"
+								class="btn btn-white py-3 px-4">Contact me</a></p>
 					</div>
 				</div>
-				<div class="col-md-4 col-lg-4 d-flex align-items-end">
+				<!-- <div class="col-md-4 col-lg-4 d-flex align-items-end">
 					<img src="images/author.png" class="img-fluid" alt="">
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
@@ -376,12 +472,14 @@
 		<div class="container-fluid px-md-4">
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-12 heading-section text-center ftco-animate">
-					<span class="subheading">Accomplishments</span>
-					<h2 class="mb-4">Our Projects</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+					<span class="subheading">Beyond the resume</span>
+					<h2 class="mb-4">My Projects</h2>
+				</div>
+				<div class="row">
+					Coming Soon...
 				</div>
 			</div>
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-md-3">
 					<div class="project img shadow ftco-animate d-flex justify-content-center align-items-center"
 						style="background-image: url(images/work-1.jpg);">
@@ -462,268 +560,57 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 
-	<section class="ftco-section testimony-section bg-primary">
+	<section class="ftco-section" id="education-section">
 		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section heading-section-white text-center ftco-animate">
-					<span class="subheading">Testimonies</span>
-					<h2 class="mb-4">What client says about?</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
-			</div>
-			<div class="row ftco-animate">
-				<div class="col-md-12">
-					<div class="carousel-testimony owl-carousel">
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<span class="fa fa-quote-left"></span>
-									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries
-										Vokalia and Consonantia, there live the blind texts.</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-										<div class="pl-3">
-											<p class="name">Roger Scott</p>
-											<span class="position">Marketing Manager</span>
-										</div>
-									</div>
-								</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12 heading-section text-center ftco-animate mb-5">
+					<span class="subheading">From classrooms to code bases</span>
+					<h2 class="mb-4">My Education</h2>
+					<ul class="experience-timeline-ul">
+						<li class="experience-timeline-li" style="--accent-color:#B2B493">
+							<div class="date">August 2022 - May 2024</div>
+							<div class="title">Master of Computer Science, North Carolina State University</div>
+							<div class="descr">
+								<ul style="text-align:left" class="list-unstyled">
+									<li><span class="fa fa-chevron-right mr-2"></span><b>Courses: </b>DevOps, Computer &
+										Network Security, Software Engineering,
+										Software Security, Cloud Computing
+									</li>
+									<br>
+									<li><span class="fa fa-chevron-right mr-2"></span><b>GPA: </b> 4.0 / 4.0
+									</li>
+								</ul>
 							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<span class="fa fa-quote-left"></span>
-									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries
-										Vokalia and Consonantia, there live the blind texts.</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-										<div class="pl-3">
-											<p class="name">Roger Scott</p>
-											<span class="position">Marketing Manager</span>
-										</div>
-									</div>
-								</div>
+						</li>
+						<li class="experience-timeline-li" style="--accent-color:#B2B493">
+							<div class="date">July 2016 - June 2020</div>
+							<div class="title">B.Tech in Computer Engineering, Nirma University</div>
+							<div class="descr">
+								<ul style="text-align:left" class="list-unstyled">
+									<li><span class="fa fa-chevron-right mr-2"></span><b>Courses: </b>Computer Networks,
+										Database Management Systems, Deep Learning,
+										Operating Systems, Algorithms
+									</li>
+									<br>
+									<li><span class="fa fa-chevron-right mr-2"></span><b>GPA: </b> 9.14 / 10.0
+									</li>
+								</ul>
 							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<span class="fa fa-quote-left"></span>
-									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries
-										Vokalia and Consonantia, there live the blind texts.</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
-										<div class="pl-3">
-											<p class="name">Roger Scott</p>
-											<span class="position">Marketing Manager</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<span class="fa fa-quote-left"></span>
-									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries
-										Vokalia and Consonantia, there live the blind texts.</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-										<div class="pl-3">
-											<p class="name">Roger Scott</p>
-											<span class="position">Marketing Manager</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap py-4">
-								<div class="text">
-									<span class="fa fa-quote-left"></span>
-									<p class="mb-4 pl-5">Far far away, behind the word mountains, far from the countries
-										Vokalia and Consonantia, there live the blind texts.</p>
-									<div class="d-flex align-items-center">
-										<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-										<div class="pl-3">
-											<p class="name">Roger Scott</p>
-											<span class="position">Marketing Manager</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</section>
 
 
-	<section class="ftco-section bg-light" id="education-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-5">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<span class="subheading">Blog</span>
-					<h2 class="mb-4">Our Blog</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
-			</div>
-			<div class="row d-flex">
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">July 03, 2020</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">July 03, 2020</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">July 03, 2020</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<span class="subheading">Contact us</span>
-					<h2 class="mb-4">Have a Project?</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
-			</div>
-
-			<div class="row block-9">
-				<div class="col-md-8">
-					<form action="#" class="bg-light p-4 p-md-5 contact-form">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Your Name">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Your Email">
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Subject">
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<textarea name="" id="" cols="30" rows="7" class="form-control"
-										placeholder="Message"></textarea>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-								</div>
-							</div>
-						</div>
-					</form>
-
-				</div>
-
-				<div class="col-md-4 d-flex pl-md-5">
-					<div class="row">
-						<div class="dbox w-100 d-flex">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-map-marker"></span>
-							</div>
-							<div class="text">
-								<p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
-							</div>
-						</div>
-						<div class="dbox w-100 d-flex">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-phone"></span>
-							</div>
-							<div class="text">
-								<p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
-							</div>
-						</div>
-						<div class="dbox w-100 d-flex">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-paper-plane"></span>
-							</div>
-							<div class="text">
-								<p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-							</div>
-						</div>
-						<div class="dbox w-100 d-flex">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="fa fa-globe"></span>
-							</div>
-							<div class="text">
-								<p><span>Website</span> <a href="#">yoursite.com</a></p>
-							</div>
-						</div>
-					</div>
-					<!-- <div id="map" class="map"></div> -->
-				</div>
-			</div>
-		</div>
-	</section>
 
 
-	<footer class="ftco-footer ftco-section">
+	<!-- <footer class="ftco-footer ftco-section">
 		<div class="container">
 			<div class="row mb-5">
 				<div class="col-md">
@@ -783,17 +670,17 @@
 				<div class="col-md-12 text-center">
 
 					<p>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
-						is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
-							target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+						Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+	Copyright &copy;
+	<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+	is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+		target="_blank">Colorlib</a>
+	Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+	</p>
+	</div>
+	</div>
+	</div>
+	</footer> -->
 
 
 
