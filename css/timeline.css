@@ -1,5 +1,5 @@
 .experience-timeline-ul {
-    --col-gap: 2rem;
+    --col-gap: 1rem;
     --row-gap: 2rem;
     --line-w: 0.25rem;
     display: grid;
@@ -30,7 +30,7 @@
   /* card */
   .experience-timeline-ul .experience-timeline-li {
     grid-column: 2;
-    --inlineP: 1.5rem;
+    --inlineP: 0.5rem;
     margin-inline: var(--inlineP);
     grid-row: span 2;
     display: grid;
@@ -91,16 +91,16 @@
   .experience-timeline-ul .experience-timeline-li .descr {
     background: var(--bgColor);
     position: relative;
-    padding-inline: 1.5rem;
+    padding-inline: 0.5rem;
   }
   .experience-timeline-ul .experience-timeline-li .title {
     overflow: hidden;
-    padding-block-start: 1.5rem;
-    padding-block-end: 1rem;
+    padding-block-start: 0.5rem;
+    padding-block-end: 0.5rem;
     font-weight: 500;
   }
   .experience-timeline-ul .experience-timeline-li .descr {
-    padding-block-end: 1.5rem;
+    padding-block-end: 0.5rem;
     font-weight: 300;
   }
   
