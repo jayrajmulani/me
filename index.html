@@ -19,7 +19,11 @@
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="https://www.linkedin.com/in/jayrajmulani/" target="_blank" class="nav-link">LinkedIn</a>
                 <a href="https://github.com/jayrajmulani" target="_blank" class="nav-link">GitHub</a>
-                <a href="./assets/Jayraj_Mulani_Resume.pdf" target="_blank" class="nav-link nav-cta">Resume</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
             </div>
         </div>
     </nav>
@@ -27,12 +31,12 @@
     <main>
         <section class="hero">
             <div class="container hero-inner">
-                <span class="hero-label">Software Engineer</span>
+                <span class="hero-label">SDE II — Kindle Engineering</span>
                 <h1>Jayraj Mulani</h1>
-                <p class="hero-desc">I build systems that scale. Right now at Amazon on the Kindle Annotations team, making reading better for millions of people. Previously Goldman Sachs, Oracle, and NCSU.</p>
+                <p class="hero-desc">I build infrastructure that scales. From distributed daemon systems processing 6B daily resolutions to AI agent benchmarking frameworks — right now at Amazon Kindle. Previously Goldman Sachs, Oracle, and NC State.</p>
                 <div class="hero-links">
-                    <a href="mailto:jayrajm.mulani@gmail.com" class="btn btn-primary">Email</a>
-                    <a href="https://www.linkedin.com/in/jayrajmulani/" target="_blank" class="btn btn-outline">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/jayrajmulani/" target="_blank" class="btn btn-primary">LinkedIn</a>
+                    <a href="mailto:jayrajm.mulani@gmail.com" class="btn btn-outline">Email</a>
                     <a href="https://github.com/jayrajmulani" target="_blank" class="btn btn-outline">GitHub</a>
                     <a href="https://leetcode.com/jayrajmulani/" target="_blank" class="btn btn-outline">Leetcode</a>
                 </div>
@@ -44,7 +48,7 @@
                 <h2 class="section-title">About</h2>
                 <div class="about-content">
                     <p>
-                        I'm a software development engineer at Amazon, working on Kindle Annotations. I focus on performance and user experience — recently improved cold-open load time by 3x and CI/CD pipeline stability by 40%.
+                        I'm a software development engineer at Amazon, working on the Kindle Engineering team. I focus on performance, infrastructure, and AI — recently improved cold-open load time by 3x, deprecated legacy services (23% memory reduction), and built a benchmarking framework for agent AI evaluating 1,000+ tool combinations.
                     </p>
                     <p>
                         Before Amazon, I was at Goldman Sachs on the Capital Risk team, where I automated regulatory reporting pipelines and cut job runtime from 7 hours to 2 hours. I also worked at Oracle for over two years and spent two years at NC State as a graduate research assistant.
@@ -69,6 +73,7 @@
                             <span class="skill-tag">TypeScript</span>
                             <span class="skill-tag">C++</span>
                             <span class="skill-tag">C</span>
+                            <span class="skill-tag">Rust</span>
                             <span class="skill-tag">HTML/CSS</span>
                             <span class="skill-tag">Shell</span>
                         </div>
@@ -108,13 +113,16 @@
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h3 class="skill-cat-title">Tools</h3>
+                        <h3 class="skill-cat-title">AI & Tools</h3>
                         <div class="skill-tags">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">Computer Vision</span>
+                            <span class="skill-tag">LLMs</span>
+                            <span class="skill-tag">Agentic AI</span>
+                            <span class="skill-tag">MCP</span>
                             <span class="skill-tag">Linux</span>
                             <span class="skill-tag">Git</span>
                             <span class="skill-tag">Jira</span>
-                            <span class="skill-tag">OAuth2</span>
-                            <span class="skill-tag">Keycloak</span>
                             <span class="skill-tag">REST APIs</span>
                         </div>
                     </div>
@@ -133,10 +141,12 @@
                             <span class="timeline-company">Amazon</span>
                         </div>
                         <ul class="timeline-desc">
-                            <li>Introduced Dark Mode support for Kindle's color e-ink devices, improving accessibility across Library and Annotation Notebook for millions of users</li>
-                            <li>Improved CI/CD pipeline stability by ~40%, added non-functional tests, reduced functional test run time by ~70 minutes</li>
-                            <li>Migrated legacy YNH (Your Notes and Highlights) service to native AWS, reducing latency by eliminating runtime service calls for localized strings</li>
-                            <li>Improved cold-open performance 3x by asynchronously processing page thumbnails for Annotation Notebook</li>
+                            <li>Re-architected Kindle's feature rollout infrastructure by replacing multiple in-process clients with a centralized daemon accessed through platform IPC, supporting ~6.2B feature treatment resolutions per day and introducing the first Rust core shipped on Kindle e-ink devices</li>
+                            <li>Developed an AgentSWE-inspired benchmarking framework for Kindle, evaluating 1,000+ combinations of tools, skills, and MCPs to systematically assess agent performance and identify actionable improvements</li>
+                            <li>Contributed to launching Dark Mode for Kindle's color e-ink devices, improving accessibility and user experience across Library and Annotation Notebook for millions of users across 13.5M+ devices</li>
+                            <li>Deprecated the legacy KWIS service and consolidated feature rollout override mechanisms, reducing the Kindle software stack's memory footprint by 23% and removing 10,000+ lines of legacy code</li>
+                            <li>Migrated the legacy YNH service to native AWS, improving deployment reliability and reducing latency by eliminating runtime dependencies on localized-string service calls</li>
+                            <li>Improved Annotation Notebook cold-open performance by 3x by asynchronously processing page thumbnails, significantly reducing initial load time</li>
                         </ul>
                     </div>
                     <div class="timeline-item">
@@ -357,6 +367,17 @@
                             <span class="skill-tag">Algorithms</span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="about-content">
+                    <p>
+                        I'm always open to conversations about distributed systems, infrastructure, AI, or just connecting. Whether it's a job opportunity, a side project, or a shared interest — reach out anytime.
+                    </p>
                 </div>
             </div>
         </section>
