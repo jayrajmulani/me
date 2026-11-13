@@ -40,6 +40,7 @@
                     <a href="mailto:jayrajm.mulani@gmail.com" class="btn btn-outline">Email</a>
                     <a href="https://github.com/jayrajmulani" target="_blank" class="btn btn-outline">GitHub</a>
                     <a href="https://leetcode.com/jayrajmulani/" target="_blank" class="btn btn-outline">Leetcode</a>
+                    <button class="btn btn-outline" id="wordBtn">Learn a new word</button>
                 </div>
             </div>
         </section>
@@ -409,6 +410,23 @@
         </div>
     </footer>
 
+    <div class="word-modal" id="wordModal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Word of the day">
+        <div class="word-modal-backdrop" data-word-close></div>
+        <div class="word-card">
+            <button class="word-close" data-word-close aria-label="Close">&#10005;</button>
+            <span class="word-type" id="wordType"></span>
+            <h3 class="word-headword" id="wordHeadword"></h3>
+            <div class="word-pron" id="wordPron"></div>
+            <p class="word-def" id="wordDef"></p>
+            <div class="word-card-footer">
+                <span class="word-count" id="wordCount"></span>
+                <button class="btn btn-primary" id="wordNext">Next word</button>
+            </div>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
+    <script src="js/words.js"></script>
+    <script src="js/wordcard.js"></script>
 </body>
 </html>
