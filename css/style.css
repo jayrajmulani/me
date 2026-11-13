@@ -246,24 +246,14 @@ a:hover { text-decoration: underline; }
 }
 
 .btn-primary {
-    background: var(--accent-gradient);
+    background: var(--accent);
     color: #fff;
-    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
-}
-
-[data-theme="dark"] .btn-primary {
-    box-shadow: 0 2px 8px rgba(88, 166, 255, 0.25);
 }
 
 .btn-primary:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.35);
+    background: var(--accent-hover);
     text-decoration: none;
     color: #fff;
-}
-
-[data-theme="dark"] .btn-primary:hover {
-    box-shadow: 0 4px 16px rgba(88, 166, 255, 0.35);
 }
 
 .btn-outline {
@@ -542,6 +532,46 @@ a:hover { text-decoration: underline; }
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+}
+
+/* === PUBLICATIONS === */
+.pub-list {
+    display: grid;
+    gap: 16px;
+    max-width: 680px;
+}
+
+.pub-item {
+    padding: 20px 22px;
+    background: var(--bg);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    transition: border-color 0.2s ease;
+}
+
+.pub-item:hover { border-color: var(--border); }
+
+.pub-title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.45;
+    margin-bottom: 6px;
+}
+
+.pub-title a { color: var(--text); }
+
+.pub-title a:hover { color: var(--accent); text-decoration: none; }
+
+.pub-authors {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.pub-venue {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.55;
 }
 
 /* === EDUCATION === */
