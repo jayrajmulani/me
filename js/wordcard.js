@@ -9,9 +9,10 @@
     const elWord = document.getElementById('wordHeadword');
     const elPron = document.getElementById('wordPron');
     const elDef = document.getElementById('wordDef');
-    const elCount = document.getElementById('wordCount');
 
     let lastIndex = -1;
+    let touchStartX = null;
+    const SWIPE_THRESHOLD = 40;
 
     function pick() {
         let i;
@@ -28,7 +29,6 @@
         elWord.textContent = item.w;
         elPron.textContent = '[' + item.p + ']';
         elDef.textContent = item.d;
-        elCount.textContent = WORDS.length + ' words in the deck';
     }
 
     function open() {
@@ -52,4 +52,16 @@
     document.addEventListener('keydown', e => {
         if (e.key === 'Escape' && modal.classList.contains('open')) close();
     });
+
+    // Swipe left or right on the card to shuffle
+    const card = modal.querySelector('.word-card');
+    card.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    card.addEventListener('touchend', e => {
+        if (touchStartX === null) return;
+        const dx = e.changedTouches[0].screenX - touchStartX;
+        touchStartX = null;
+        if (Math.abs(dx) >= SWIPE_THRESHOLD) show();
+    }, { passive: true });
 })();
